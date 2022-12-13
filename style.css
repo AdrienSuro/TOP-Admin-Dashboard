@@ -1,6 +1,7 @@
 body {
     margin : 0px;
     padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .body {
@@ -8,6 +9,8 @@ body {
     grid-template-columns: 300px 1fr;
     grid-template-rows: 150px 1fr;
 }
+
+/* SIDEBAR */
 
 .sidebar {
     height: 100vh;
@@ -17,7 +20,21 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr repeat(11, 1fr);
 }
+
+.sidebar > div {
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* HEADER */
 
 .header {
     grid-column : 2 / 3;
@@ -27,6 +44,8 @@ body {
     top: 0;
     left: 300px;
 }
+
+/* MAIN */
 
 .main {
     grid-column: 2 / 3;
