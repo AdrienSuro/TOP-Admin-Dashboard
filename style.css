@@ -14,7 +14,11 @@ body {
 .body {
     display: grid;
     grid-template-columns: 270px 1fr;
-    grid-template-rows: 180px 1fr;
+    grid-template-rows: 200px 1fr;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* SIDEBAR */
@@ -63,7 +67,7 @@ body {
     top: 0;
     left: 300px;
     display: grid;
-    grid-template-rows: 5fr 7fr;
+    grid-template-rows: 2fr 7fr;
 }
 
 .header div {
@@ -71,6 +75,7 @@ body {
 }
 
 .header-group1 {
+    margin-left: 40px;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 50px 1fr 50px 50px 200px;
@@ -99,14 +104,16 @@ body {
 }
 
 .header-group2 {
+    margin-left: 40px;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 100px 1fr 100px 100px 100px;
+    grid-template-rows: 1fr;
     align-items: center;
+    justify-items: center;
 }
 
 #emoji-big {
-    margin-left: 20px;
     width: 100%;
 }
 
