@@ -205,6 +205,10 @@ h2 {
     outline: 3px solid lightblue;
 }
 
+.card > p {
+    color: rgb(123, 122, 122);
+}
+
 .project-title {
     grid-row: 1/2;
     grid-column: 1/5;
@@ -268,6 +272,10 @@ h2 {
     border-radius: 10px;
     box-shadow: 5px 3px 3px darkgray;
     padding: 20px;
+}
+
+.announcements-body > p {
+    color:rgb(123, 122, 122);
 }
 
 /* Trending section */
